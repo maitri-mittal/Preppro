@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Companies | PrepPro</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- Companies CSS -->
+    <link rel="stylesheet" href="css/companies.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <span>PrepPro</span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="dashboard.html" class="nav-link">
+                Dashboard
+            </a>
+
+            <a href="aptitude.html" class="nav-link">
+                Aptitude
+            </a>
+
+            <a href="coding.html" class="nav-link">
+                Coding
+            </a>
+
+            <a href="companies.html" class="nav-link active">
+                Companies
+            </a>
+
+            <a href="resume.html" class="nav-link">
+                Resume
+            </a>
+
+            <a href="mock-tests.html" class="nav-link">
+                Mock Tests
+            </a>
+
+            <a href="interview.html" class="nav-link">
+                Interview
+            </a>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- LOGIN / SIGNUP -->
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+                Sign Up
+            </a>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="company-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            <i class="fa-solid fa-building"></i>
+            COMPANY PREPARATION
+        </span>
+
+        <h1>
+
+            Prepare for India's and World's
+
+            <span>leading recruiters.</span>
+
+        </h1>
+
+        <p>
+
+            Explore top companies, understand their hiring
+            process and prepare for your dream placement.
+
+        </p>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Company..."
+                autocomplete="off"
+            >
+
+            <button id="searchBtn">
+
+                Search
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= COMPANY SECTION ================= -->
+
+<section class="company-section">
+
+    <div class="section-heading">
+
+        <span>
+            TOP RECRUITERS
+        </span>
+
+        <h2>
+            Explore Your Dream Companies
+        </h2>
+
+        <p>
+            Discover leading companies and visit their official
+            career pages to explore opportunities.
+        </p>
+
+    </div>
+
+
+    <div class="company-grid" id="companyGrid">
+
+
+        <!-- GOOGLE -->
+
+        <div class="company-card" data-company="google">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/google.png"
+                    alt="Google"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-brands fa-google fallback-icon"></i>
+
+            </div>
+
+            <h2>Google</h2>
+
+            <div class="package">
+                ₹35 LPA Avg.
+            </div>
+
+            <a
+                href="https://careers.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- MICROSOFT -->
+
+        <div class="company-card" data-company="microsoft">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/microsoft.png"
+                    alt="Microsoft"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-brands fa-microsoft fallback-icon"></i>
+
+            </div>
+
+            <h2>Microsoft</h2>
+
+            <div class="package">
+                ₹30 LPA Avg.
+            </div>
+
+            <a
+                href="https://careers.microsoft.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- AMAZON -->
+
+        <div class="company-card" data-company="amazon">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/amazon.png"
+                    alt="Amazon"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-brands fa-amazon fallback-icon"></i>
+
+            </div>
+
+            <h2>Amazon</h2>
+
+            <div class="package">
+                ₹28 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.amazon.jobs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- META -->
+
+        <div class="company-card" data-company="meta">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/meta.png"
+                    alt="Meta"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-brands fa-meta fallback-icon"></i>
+
+            </div>
+
+            <h2>Meta</h2>
+
+            <div class="package">
+                ₹40 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.metacareers.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- NETFLIX -->
+
+        <div class="company-card" data-company="netflix">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/netflix.png"
+                    alt="Netflix"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-n fallback-icon"></i>
+
+            </div>
+
+            <h2>Netflix</h2>
+
+            <div class="package">
+                ₹35 LPA Avg.
+            </div>
+
+            <a
+                href="https://jobs.netflix.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- APPLE -->
+
+        <div class="company-card" data-company="apple">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/apple.png"
+                    alt="Apple"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-brands fa-apple fallback-icon"></i>
+
+            </div>
+
+            <h2>Apple</h2>
+
+            <div class="package">
+                ₹30 LPA Avg.
+            </div>
+
+            <a
+                href="https://jobs.apple.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ADOBE -->
+
+        <div class="company-card" data-company="adobe">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/adobe.png"
+                    alt="Adobe"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-a fallback-icon"></i>
+
+            </div>
+
+            <h2>Adobe</h2>
+
+            <div class="package">
+                ₹28 LPA Avg.
+            </div>
+
+            <a
+                href="https://careers.adobe.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ORACLE -->
+
+        <div class="company-card" data-company="oracle">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/oracle.png"
+                    alt="Oracle"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-database fallback-icon"></i>
+
+            </div>
+
+            <h2>Oracle</h2>
+
+            <div class="package">
+                ₹20 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.oracle.com/careers/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- UBER -->
+
+        <div class="company-card" data-company="uber">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/uber.png"
+                    alt="Uber"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-car fallback-icon"></i>
+
+            </div>
+
+            <h2>Uber</h2>
+
+            <div class="package">
+                ₹30 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.uber.com/careers/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- FLIPKART -->
+
+        <div class="company-card" data-company="flipkart">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/flipkart.png"
+                    alt="Flipkart"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-cart-shopping fallback-icon"></i>
+
+            </div>
+
+            <h2>Flipkart</h2>
+
+            <div class="package">
+                ₹25 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.flipkartcareers.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- TCS -->
+
+        <div class="company-card" data-company="tcs">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/tcs.png"
+                    alt="TCS"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-building fallback-icon"></i>
+
+            </div>
+
+            <h2>TCS</h2>
+
+            <div class="package">
+                ₹7 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.tcs.com/careers"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- INFOSYS -->
+
+        <div class="company-card" data-company="infosys">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/infosys.png"
+                    alt="Infosys"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-building-columns fallback-icon"></i>
+
+            </div>
+
+            <h2>Infosys</h2>
+
+            <div class="package">
+                ₹8 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.infosys.com/careers"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- WIPRO -->
+
+        <div class="company-card" data-company="wipro">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/wipro.png"
+                    alt="Wipro"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-w fallback-icon"></i>
+
+            </div>
+
+            <h2>Wipro</h2>
+
+            <div class="package">
+                ₹6.5 LPA Avg.
+            </div>
+
+            <a
+                href="https://careers.wipro.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ACCENTURE -->
+
+        <div class="company-card" data-company="accenture">
+
+            <div class="company-logo">
+
+                <img
+                    src="images/accenture.png"
+                    alt="Accenture"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('logo-fallback');"
+                >
+
+                <i class="fa-solid fa-a fallback-icon"></i>
+
+            </div>
+
+            <h2>Accenture</h2>
+
+            <div class="package">
+                ₹10 LPA Avg.
+            </div>
+
+            <a
+                href="https://www.accenture.com/in-en/careers"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="explore-btn"
+            >
+
+                Explore
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- NO RESULT MESSAGE -->
+
+    <div
+        class="no-results"
+        id="noResults"
+    >
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <h3>
+            No company found
+        </h3>
+
+        <p>
+            Try searching for another company.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="company-cta">
+
+    <div>
+
+        <span>
+            READY FOR YOUR DREAM COMPANY?
+        </span>
+
+        <h2>
+            Start Preparing Today.
+        </h2>
+
+        <p>
+            Practice coding, aptitude and interview questions
+            with PrepPro.
+        </p>
+
+    </div>
+
+    <div class="cta-buttons">
+
+        <a href="coding.html" class="cta-primary">
+            Start Coding
+            <i class="fa-solid fa-code"></i>
+        </a>
+
+        <a href="mock-tests.html" class="cta-secondary">
+            Take Mock Test
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="footer-logo">
+
+                <i class="fa-solid fa-crown"></i>
+
+                PrepPro
+
+            </a>
+
+            <p>
+
+                Your trusted placement preparation partner.
+                Learn, Practice, Improve and Get Placed.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="companies.html">Companies</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+
+            <h3>
+                Services
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="coding.html">
+                        Coding Practice
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mock-tests.html">
+                        Mock Tests
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        Resume Builder
+                    </a>
+                </li>
+
+                <li>
+                    <a href="interview.html">
+                        Interview Preparation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="career.html">
+                        Career Guidance
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- SOCIAL -->
+
+        <div class="footer-column">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <p class="follow-text">
+                Follow PrepPro for latest placement updates.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 PrepPro | All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="js/companies.js"></script>
+
+</body>
+
+</html>

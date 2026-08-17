@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | PrepPro</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-crown">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <span class="logo-text">
+                PrepPro
+            </span>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            </li>
+
+            <li>
+                <a href="signup.html">
+                    Sign Up
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html" class="active">
+                    Login
+                </a>
+            </li>
+
+        </ul>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= LOGIN SECTION ================= -->
+
+<section class="login-section">
+
+    <div class="login-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="login-info">
+
+            <span class="login-badge">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                Welcome Back
+
+            </span>
+
+            <h1>
+                Continue Your
+                <span>Placement Journey.</span>
+            </h1>
+
+            <p>
+                Login to PrepPro and continue your preparation,
+                track your progress, practice coding problems,
+                and get ready for your dream company.
+            </p>
+
+
+            <div class="login-features">
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Practice Coding
+                        </h3>
+
+                        <p>
+                            Improve your problem-solving skills.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Track Progress
+                        </h3>
+
+                        <p>
+                            Monitor your placement preparation.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Prepare For Companies
+                        </h3>
+
+                        <p>
+                            Practice company-specific questions.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE LOGIN CARD -->
+
+        <div class="login-card">
+
+            <div class="login-card-header">
+
+                <div class="card-logo">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </div>
+
+                <h2>
+                    Login to PrepPro
+                </h2>
+
+                <p>
+                    Enter your details to continue
+                </p>
+
+            </div>
+
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <div class="password-label">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                        >
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REMEMBER -->
+
+                <div class="remember-row">
+
+                    <label class="remember">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+
+                    Login
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- MESSAGE -->
+
+                <div
+                    id="loginMessage"
+                    class="login-message"
+                ></div>
+
+
+                <!-- SIGN UP -->
+
+                <div class="signup-link">
+
+                    Don't have an account?
+
+                    <a href="signup.html">
+                        Create Account
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-column footer-brand">
+
+            <h2>
+                <i class="fa-solid fa-crown"></i>
+                PrepPro
+            </h2>
+
+            <p>
+                Your trusted placement preparation partner.
+                Learn, Practice, Improve and Get Placed.
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="signup.html">Register</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                 <a href="logout.html">
+                    Logout
+                </a>
+            </li>
+
+
+            </ul>
+
+        </div>
+
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <ul>
+
+                <li>
+                    <a href="#">Coding Practice</a>
+                </li>
+
+                <li>
+                    <a href="#">Mock Tests</a>
+                </li>
+
+                <li>
+                    <a href="#">Resume Builder</a>
+                </li>
+
+                <li>
+                    <a href="#">Interview Questions</a>
+                </li>
+
+                <li>
+                    <a href="#">Career Guidance</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- FOLLOW US -->
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <p class="follow-text">
+                Follow PrepPro for the latest placement updates,
+                opportunities and career tips.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <hr>
+
+
+    <div class="copyright">
+
+        © 2026 <strong>PrepPro</strong> | All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

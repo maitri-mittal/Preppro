@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview Preparation | PrepPro</title>
+
+    <link rel="stylesheet" href="css/interview.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            PrepPro
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+
+            <a href="dashboard.html" class="nav-link">
+                Dashboard
+            </a>
+
+            <a href="aptitude.html" class="nav-link">
+                Aptitude
+            </a>
+
+            <a href="coding.html" class="nav-link">
+                Coding
+            </a>
+
+            <a href="companies.html" class="nav-link">
+                Companies
+            </a>
+
+            <a href="resume.html" class="nav-link">
+                Resume
+            </a>
+
+            <a href="mock-tests.html" class="nav-link">
+                Mock Tests
+            </a>
+
+            <a href="interview.html" class="nav-link active">
+                Interview
+            </a>
+
+            <a href="about.html" class="nav-link">
+                About
+            </a>
+
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+                Sign Up
+            </a>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="interview-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            <i class="fa-solid fa-comments"></i>
+            Interview Preparation
+        </span>
+
+        <h1>
+            Crack Your
+            <span>Technical Interview</span>
+            With Confidence
+        </h1>
+
+        <p>
+            Practice technical questions, HR questions and
+            frequently asked interview concepts from leading
+            engineering companies.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#questions" class="primary-btn">
+                Start Practicing
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#tips" class="secondary-btn">
+                Interview Tips
+                <i class="fa-solid fa-lightbulb"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="interview-icon">
+            <i class="fa-solid fa-user-tie"></i>
+        </div>
+
+        <h3>
+            Are You Interview Ready?
+        </h3>
+
+        <p>
+            Test your knowledge and improve your confidence
+            before facing the real interview.
+        </p>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>100+</strong>
+                <span>Questions</span>
+            </div>
+
+            <div>
+                <strong>9</strong>
+                <span>Subjects</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Practice</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories-section">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            INTERVIEW DOMAINS
+        </span>
+
+        <h2>
+            Prepare For Every Technical Round
+        </h2>
+
+        <p>
+            Select a subject and practice the questions
+            commonly asked in engineering interviews.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <button class="category-card active"
+            data-category="all">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <span>All</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="java">
+
+            <i class="fa-brands fa-java"></i>
+
+            <span>Java</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="python">
+
+            <i class="fa-brands fa-python"></i>
+
+            <span>Python</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="cpp">
+
+            <i class="fa-solid fa-code"></i>
+
+            <span>C / C++</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="dbms">
+
+            <i class="fa-solid fa-database"></i>
+
+            <span>DBMS</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="oops">
+
+            <i class="fa-solid fa-cubes"></i>
+
+            <span>OOPs</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="os">
+
+            <i class="fa-solid fa-desktop"></i>
+
+            <span>Operating Systems</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="cn">
+
+            <i class="fa-solid fa-network-wired"></i>
+
+            <span>Computer Networks</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="aiml">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>AI / ML</span>
+
+        </button>
+
+
+        <button class="category-card"
+            data-category="hr">
+
+            <i class="fa-solid fa-user-tie"></i>
+
+            <span>HR</span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+    <div class="search-container">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            id="questionSearch"
+            placeholder="Search interview questions..."
+        >
+
+        <button id="clearSearch">
+            Clear
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUESTIONS ================= -->
+
+<section class="questions-section"
+    id="questions">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            PRACTICE QUESTIONS
+        </span>
+
+        <h2>
+            Frequently Asked Interview Questions
+        </h2>
+
+        <p>
+            Click "Show Answer" to reveal the explanation.
+        </p>
+
+    </div>
+
+
+    <div class="questions-container"
+        id="questionsContainer">
+
+
+        <!-- QUESTION 1 -->
+
+        <article class="question-card"
+            data-category="java">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q1
+                </span>
+
+                <span class="question-tag">
+                    Java
+                </span>
+
+            </div>
+
+            <h3>
+                What is the difference between JDK, JRE and JVM?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    JVM executes Java bytecode. JRE provides the
+                    JVM along with libraries required to run Java
+                    applications. JDK contains the JRE plus
+                    development tools such as the compiler.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 2 -->
+
+        <article class="question-card"
+            data-category="java">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q2
+                </span>
+
+                <span class="question-tag">
+                    Java
+                </span>
+
+            </div>
+
+            <h3>
+                What is method overloading in Java?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    Method overloading occurs when multiple methods
+                    have the same name but different parameter lists.
+                    It is an example of compile-time polymorphism.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 3 -->
+
+        <article class="question-card"
+            data-category="python">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q3
+                </span>
+
+                <span class="question-tag">
+                    Python
+                </span>
+
+            </div>
+
+            <h3>
+                What is the difference between a list and a tuple?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    Lists are mutable, meaning their elements can
+                    be changed after creation. Tuples are immutable
+                    and generally used when the data should not
+                    change.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 4 -->
+
+        <article class="question-card"
+            data-category="cpp">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q4
+                </span>
+
+                <span class="question-tag">
+                    C / C++
+                </span>
+
+            </div>
+
+            <h3>
+                What is a pointer in C?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    A pointer is a variable that stores the memory
+                    address of another variable.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 5 -->
+
+        <article class="question-card"
+            data-category="dbms">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q5
+                </span>
+
+                <span class="question-tag">
+                    DBMS
+                </span>
+
+            </div>
+
+            <h3>
+                What is normalization in DBMS?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    Normalization is the process of organizing
+                    database tables to reduce data redundancy and
+                    improve data integrity.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 6 -->
+
+        <article class="question-card"
+            data-category="oops">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q6
+                </span>
+
+                <span class="question-tag">
+                    OOPs
+                </span>
+
+            </div>
+
+            <h3>
+                What are the four major principles of OOP?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    The four major principles are encapsulation,
+                    inheritance, polymorphism and abstraction.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 7 -->
+
+        <article class="question-card"
+            data-category="os">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q7
+                </span>
+
+                <span class="question-tag">
+                    Operating Systems
+                </span>
+
+            </div>
+
+            <h3>
+                What is a process?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    A process is a program that is currently being
+                    executed. It contains its own execution state
+                    and allocated resources.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 8 -->
+
+        <article class="question-card"
+            data-category="cn">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q8
+                </span>
+
+                <span class="question-tag">
+                    Computer Networks
+                </span>
+
+            </div>
+
+            <h3>
+                What is the difference between TCP and UDP?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    TCP is connection-oriented and provides reliable
+                    delivery. UDP is connectionless and generally
+                    provides faster communication without guaranteed
+                    delivery.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 9 -->
+
+        <article class="question-card"
+            data-category="aiml">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q9
+                </span>
+
+                <span class="question-tag">
+                    AI / ML
+                </span>
+
+            </div>
+
+            <h3>
+                What is supervised learning?
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    Supervised learning uses labeled training data
+                    to learn a relationship between input features
+                    and target outputs.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- QUESTION 10 -->
+
+        <article class="question-card"
+            data-category="hr">
+
+            <div class="question-top">
+
+                <span class="question-number">
+                    Q10
+                </span>
+
+                <span class="question-tag">
+                    HR
+                </span>
+
+            </div>
+
+            <h3>
+                Tell me about yourself.
+            </h3>
+
+            <button class="answer-btn">
+                Show Answer
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="answer">
+
+                <p>
+                    Give a short professional introduction covering
+                    your education, relevant technical skills,
+                    projects, achievements and career goals.
+                    Avoid giving unnecessary personal details.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="no-results"
+        id="noResults">
+
+        <i class="fa-solid fa-face-frown"></i>
+
+        <h3>
+            No questions found
+        </h3>
+
+        <p>
+            Try another keyword or select a different category.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTERVIEW TIPS ================= -->
+
+<section class="tips-section"
+    id="tips">
+
+    <div class="section-heading">
+
+        <span class="section-label">
+            INTERVIEW TIPS
+        </span>
+
+        <h2>
+            How To Perform Better In Interviews
+        </h2>
+
+    </div>
+
+
+    <div class="tips-grid">
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <h3>
+                Know Your Fundamentals
+            </h3>
+
+            <p>
+                Revise programming, DBMS, OOPs, operating systems
+                and computer networks before the interview.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>
+                Practice Coding
+            </h3>
+
+            <p>
+                Solve coding problems regularly and understand
+                the logic instead of memorizing solutions.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+
+            <h3>
+                Communicate Clearly
+            </h3>
+
+            <p>
+                Explain your approach step by step and don't be
+                afraid to ask for clarification.
+            </p>
+
+        </div>
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+
+            <h3>
+                Know Your Resume
+            </h3>
+
+            <p>
+                Be prepared to explain every skill, project and
+                achievement mentioned on your resume.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="interview-cta">
+
+    <div>
+
+        <span>
+            READY FOR YOUR NEXT INTERVIEW?
+        </span>
+
+        <h2>
+            Practice Today. Interview With Confidence.
+        </h2>
+
+        <p>
+            Strengthen your technical knowledge and become
+            placement ready with PrepPro.
+        </p>
+
+    </div>
+
+
+    <div class="cta-buttons">
+
+        <a href="coding.html"
+            class="cta-primary">
+
+            Practice Coding
+            <i class="fa-solid fa-code"></i>
+
+        </a>
+
+        <a href="mock-tests.html"
+            class="cta-secondary">
+
+            Take Mock Test
+            <i class="fa-solid fa-file-circle-check"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column footer-brand">
+
+            <a href="index.html"
+                class="footer-logo">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+                PrepPro
+
+            </a>
+
+            <p>
+                Your trusted placement preparation partner.
+                Learn, Practice, Improve and Get Placed.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Services
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="coding.html">
+                        Coding Practice
+                    </a>
+                </li>
+
+                <li>
+                    <a href="aptitude.html">
+                        Aptitude Practice
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mock-tests.html">
+                        Mock Tests
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        Resume Builder
+                    </a>
+                </li>
+
+                <li>
+                    <a href="career.html">
+                        Career Guidance
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Interview
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#questions">
+                        Technical Questions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#tips">
+                        Interview Tips
+                    </a>
+                </li>
+
+                <li>
+                    <a href="companies.html">
+                        Company Preparation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        Track Progress
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 PrepPro | All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/interview.js"></script>
+
+</body>
+</html>

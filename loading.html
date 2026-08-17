@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="4; url=index.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PrepPro | Loading</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1e1b4b,#4338ca,#6d28d9);
+    position:relative;
+}
+
+/* Floating Background */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(60px);
+    opacity:.25;
+    animation:float 8s ease-in-out infinite alternate;
+}
+
+.circle1{
+    width:350px;
+    height:350px;
+    background:#8b5cf6;
+    top:-100px;
+    left:-100px;
+}
+
+.circle2{
+    width:280px;
+    height:280px;
+    background:#2563eb;
+    bottom:-80px;
+    right:-80px;
+    animation-delay:2s;
+}
+
+.circle3{
+    width:180px;
+    height:180px;
+    background:#06b6d4;
+    top:18%;
+    right:18%;
+    animation-delay:1s;
+}
+
+@keyframes float{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(45px);
+    }
+
+}
+
+/* Card */
+
+.container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:420px;
+
+    text-align:center;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:3px solid white;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+
+}
+
+/* Logo */
+
+.logo{
+
+    font-size:65px;
+
+    animation:bounce 1.5s infinite;
+
+}
+
+@keyframes bounce{
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+h1{
+
+    color:white;
+
+    margin-top:12px;
+
+    font-size:48px;
+
+}
+
+p{
+
+    color:#dbeafe;
+
+    margin:15px 0 35px;
+
+    font-size:17px;
+
+}
+
+/* Loader */
+
+.loader{
+
+    width:100%;
+
+    height:12px;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+    90deg,
+    #00d4ff,
+    #38bdf8,
+    #ffffff,
+    #38bdf8,
+    #00d4ff
+    );
+
+    background-size:300%;
+
+    animation:
+    loading 4s linear forwards,
+    glow 1s linear infinite;
+
+}
+
+@keyframes loading{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes glow{
+
+    from{
+
+        background-position:0;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+.percent{
+
+    margin-top:20px;
+
+    font-size:28px;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.status{
+
+    margin-top:8px;
+
+    color:#d1d5db;
+
+    font-size:15px;
+
+    animation:pulse 1.3s infinite;
+
+}
+
+@keyframes pulse{
+
+    50%{
+
+        opacity:.45;
+
+    }
+
+}
+
+.footer{
+
+    margin-top:30px;
+
+    color:#cbd5e1;
+
+    font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <script>
+
+</script>
+
+<div class="circle circle1"></div>
+<div class="circle circle2"></div>
+<div class="circle circle3"></div>
+
+<div class="container">
+
+    <div class="logo">🎓</div>
+
+    <h1>PrepPro</h1>
+
+    <p>Preparing Your Placement Journey...</p>
+
+    <div class="loader">
+
+        <div class="progress"></div>
+
+    </div>
+
+    <div class="percent" id="percent">0%</div>
+
+    <div class="status">
+
+        Loading Resources...
+
+    </div>
+
+    <div class="footer">
+
+        Practice • Learn • Crack Placements 🚀
+
+    </div>
+
+</div>
+
+<script>
+
+let count = 0;
+
+const percent = document.getElementById("percent");
+
+const timer = setInterval(function(){
+
+    count++;
+
+    percent.innerHTML = count + "%";
+
+    if(count >= 100){
+
+        clearInterval(timer);
+
+    }
+
+},40);
+
+</script>
+
+</body>
+</html>

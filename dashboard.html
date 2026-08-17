@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | PrepPro</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-crown">
+                <i class="fa-solid fa-crown"></i>
+            </span>
+
+            <span>PrepPro</span>
+
+        </a>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.html" class="active">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="companies.html">
+                    Companies
+                </a>
+            </li>
+
+            <li>
+                <a href="resume.html">
+                    Resume
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact Us
+                </a>
+            </li>
+
+            <li>
+                <a href="logout.html">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+
+        <button class="menu-toggle" id="menuToggle">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= DASHBOARD HERO ================= -->
+
+<main>
+
+<section class="dashboard-hero">
+
+    <div class="hero-content">
+
+        <span class="welcome-badge">
+
+            <i class="fa-solid fa-hand-sparkles"></i>
+
+            Student Dashboard
+
+        </span>
+
+
+        <h1>
+
+            Welcome Back,
+
+            <span>Student!</span>
+
+        </h1>
+
+
+        <p>
+
+            Continue your placement preparation,
+            track your progress and move one step
+            closer to your dream career.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="coding.html" class="primary-btn">
+
+                <i class="fa-solid fa-code"></i>
+
+                Continue Practice
+
+            </a>
+
+
+            <a href="companies.html" class="secondary-btn">
+
+                Explore Companies
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="hero-card-icon">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+        </div>
+
+        <h3>Placement Journey</h3>
+
+        <p>Keep learning. Keep practicing.</p>
+
+        <div class="mini-progress">
+
+            <div></div>
+
+        </div>
+
+        <span>68% Completed</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="dashboard-section">
+
+    <div class="stats-grid">
+
+
+        <div class="dashboard-stat">
+
+            <div class="stat-icon blue">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <div>
+
+                <h3>128</h3>
+
+                <p>Problems Solved</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-stat">
+
+            <div class="stat-icon green">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+            <div>
+
+                <h3>24</h3>
+
+                <p>Tests Completed</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-stat">
+
+            <div class="stat-icon purple">
+
+                <i class="fa-solid fa-building"></i>
+
+            </div>
+
+            <div>
+
+                <h3>18</h3>
+
+                <p>Companies Explored</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-stat">
+
+            <div class="stat-icon orange">
+
+                <i class="fa-solid fa-fire"></i>
+
+            </div>
+
+            <div>
+
+                <h3>12 Days</h3>
+
+                <p>Current Streak</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MAIN DASHBOARD ================= -->
+
+<section class="dashboard-section">
+
+    <div class="dashboard-layout">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="dashboard-main">
+
+
+            <!-- PROGRESS -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            YOUR PROGRESS
+                        </span>
+
+                        <h2>
+                            Preparation Overview
+                        </h2>
+
+                    </div>
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Coding Practice</span>
+
+                        <strong>72%</strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            data-progress="72"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Aptitude Practice</span>
+
+                        <strong>58%</strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            data-progress="58"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Interview Preparation</span>
+
+                        <strong>45%</strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            data-progress="45"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-info">
+
+                        <span>Resume Preparation</span>
+
+                        <strong>80%</strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            data-progress="80"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            QUICK ACTIONS
+                        </span>
+
+                        <h2>
+                            Continue Learning
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="action-grid">
+
+
+                    <a href="coding.html" class="action-card">
+
+                        <div class="action-icon blue">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                        </div>
+
+                        <h3>Coding Practice</h3>
+
+                        <p>
+                            Solve coding problems
+                            and improve logic.
+                        </p>
+
+                        <span>
+                            Start Practice
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a href="aptitude.html" class="action-card">
+
+                        <div class="action-icon purple">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+                        <h3>Aptitude</h3>
+
+                        <p>
+                            Practice quantitative and
+                            logical questions.
+                        </p>
+
+                        <span>
+                            Practice Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a href="mock-tests.html" class="action-card">
+
+                        <div class="action-icon green">
+
+                            <i class="fa-solid fa-clipboard-check"></i>
+
+                        </div>
+
+                        <h3>Mock Tests</h3>
+
+                        <p>
+                            Test your preparation
+                            under exam conditions.
+                        </p>
+
+                        <span>
+                            Take Test
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                    <a href="interview.html" class="action-card">
+
+                        <div class="action-icon orange">
+
+                            <i class="fa-solid fa-comments"></i>
+
+                        </div>
+
+                        <h3>Interview Prep</h3>
+
+                        <p>
+                            Prepare for technical
+                            and HR interviews.
+                        </p>
+
+                        <span>
+                            Prepare Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside class="dashboard-sidebar">
+
+
+            <!-- PROFILE -->
+
+            <div class="profile-card">
+
+                <div class="profile-icon">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+                <h2>Student Profile</h2>
+
+                <p>
+                    Placement Aspirant
+                </p>
+
+
+                <a href="resume.html" class="profile-btn">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    View Resume
+
+                </a>
+
+            </div>
+
+
+
+            <!-- TODAY -->
+
+            <div class="dashboard-card today-card">
+
+                <span class="section-label">
+                    TODAY'S GOAL
+                </span>
+
+                <h2>
+                    Keep The Streak Alive 🔥
+                </h2>
+
+                <p>
+                    Complete at least 3 coding
+                    problems today.
+                </p>
+
+
+                <div class="goal-progress">
+
+                    <div>
+
+                        <span>
+                            Daily Progress
+                        </span>
+
+                        <strong>
+                            2 / 3
+                        </strong>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress-fill"
+                            style="width:66%"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="coding.html" class="goal-btn">
+
+                    Complete Goal
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- UPCOMING -->
+
+            <div class="dashboard-card upcoming">
+
+                <span class="section-label">
+                    UPCOMING
+                </span>
+
+                <h2>
+                    Placement Preparation
+                </h2>
+
+
+                <div class="upcoming-item">
+
+                    <div class="upcoming-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Company Preparation
+                        </strong>
+
+                        <span>
+                            Explore hiring patterns
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="upcoming-item">
+
+                    <div class="upcoming-icon">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Resume Review
+                        </strong>
+
+                        <span>
+                            Improve your resume
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ROADMAP CTA ================= -->
+
+<section class="dashboard-cta">
+
+    <div>
+
+        <span>
+            NEED A CLEAR ROADMAP?
+        </span>
+
+        <h2>
+            Follow Your Placement Journey Step-by-Step.
+        </h2>
+
+        <p>
+            Explore our university placement roadmaps
+            and understand exactly what you should
+            focus on at every stage.
+        </p>
+
+    </div>
+
+
+    <a href="resources.html" class="cta-btn">
+
+        Explore Roadmaps
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <a href="index.html" class="footer-logo">
+
+                <i class="fa-solid fa-crown"></i>
+
+                PrepPro
+
+            </a>
+
+            <p>
+                Your trusted placement preparation partner.
+                Learn, Practice, Improve and Get Placed.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+                <li>
+                    <a href="logout.html">Logout</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <ul>
+
+                <li>
+                    <a href="coding.html">
+                        Coding Practice
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mock-tests.html">
+                        Mock Tests
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        Resume Builder
+                    </a>
+                </li>
+
+                <li>
+                    <a href="interview.html">
+                        Interview Preparation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="career.html">
+                        Career Guidance
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <hr>
+
+
+    <div class="copyright">
+
+        © 2026 PrepPro | All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
