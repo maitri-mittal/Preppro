@@ -573,8 +573,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
     );
-
-
     backToTop.addEventListener(
         "click",
         function () {
@@ -586,7 +584,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
     );
-
-
 });
+function toggleTheme() {
+    let button = document.getElementById("themeToggle");
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        button.innerHTML = "☀️ Light Mode";
+    } else {
+        button.innerHTML = "🌙 Dark Mode";
+    }
+}
 

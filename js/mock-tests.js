@@ -229,15 +229,37 @@ document.addEventListener("DOMContentLoaded", () => {
                                 button.dataset.index
                             );
 
-                        startTest(
-                            subjects[index]
-                        );
-
+                        
+                        loadTestWithPromise(subjects[index])
+                            .then((test) => {
+                                startTest(test);
+                            })
+                            .catch((error) => {
+                                alert(error);
+                            })
+                            .finally(() => {
+                                console.log("Promise completed");
+                            });
                     }
                 );
 
             });
 
+    }
+    /*=========================================
+    PROMISE
+    =========================================*/
+    
+    function loadTestWithPromise(subject) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (subject && subject.questions.length > 0) {
+                resolve(subject);
+            } else {
+                reject("Questions not available!");
+            }
+        }, 1000);
+    });
     }
 
 

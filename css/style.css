@@ -2803,3 +2803,23 @@ footer hr {
 
 }
 
+
+#themeToggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#themeToggle:hover {
+    background: #1d4ed8;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
